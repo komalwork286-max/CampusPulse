@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1A73E8"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="Reports And Performance"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Campus issue analytics"
+                android:textSize="14sp"
+                android:textColor="#E8EAED"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- Cards -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp">
+
+            <!-- Total -->
+            <TextView
+                android:id="@+id/tvTotalIssues"
+                style="@style/reportCard"
+                android:text="Total Issues: 0"/>
+
+            <!-- Pending -->
+            <TextView
+                android:id="@+id/tvPendingIssues"
+                style="@style/reportCard"
+                android:text="Pending Issues: 0"/>
+
+            <!-- In Progress -->
+            <TextView
+                android:id="@+id/tvInProgressIssues"
+                style="@style/reportCard"
+                android:text="In Progress Issues: 0"/>
+
+            <!-- Resolved -->
+            <TextView
+                android:id="@+id/tvResolvedIssues"
+                style="@style/reportCard"
+                android:text="Resolved Issues: 0"/>
+
+            <!-- Performance -->
+            <TextView
+                android:id="@+id/tvPerformance"
+                style="@style/reportCard"
+                android:text="Resolution Rate: 0%"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
